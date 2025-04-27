@@ -1,1 +1,70 @@
 //CSS mutual file
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.promotion-banner {
+    background-color: #ffe082;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.promotions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promotion-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.promotion-item h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
