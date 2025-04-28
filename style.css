@@ -1,70 +1,115 @@
-//CSS mutual file
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Header */
 header {
-    background-color: #1e90ff;
+    background-color: #007bff;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
-nav {
+nav ul {
+    list-style: none;
+    padding: 0;
     margin-top: 10px;
 }
 
-nav a {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
-nav a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
+/* Banner Section (Home Page) */
+.banner {
+    background-color: #e9ecef;
+    padding: 50px;
+    text-align: center;
 }
 
-.promotion-banner {
-    background-color: #ffe082;
+.banner h2 {
+    margin-bottom: 10px;
+}
+
+/* Highlights Section (Home Page) */
+.highlights {
+    padding: 30px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.highlights ul {
+    padding-left: 20px;
+}
+
+/* Product Grid (Products Page) */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
     padding: 20px;
     text-align: center;
-    margin-bottom: 30px;
-    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.promotions-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-.promotion-item {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+.product-card h3 {
+    margin: 15px 0 10px 0;
 }
 
-.promotion-item h3 {
-    margin-top: 0;
+.product-card p {
+    margin-bottom: 15px;
+}
+
+.product-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-card a:hover {
+    background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-    background-color: #1e90ff;
+    background-color: #007bff;
     color: white;
     text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 0;
+    margin-top: 30px;
 }
