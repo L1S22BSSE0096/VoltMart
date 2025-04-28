@@ -68,3 +68,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.product-details-page h1 {
+    color: navy;
+    text-align: center;
+}
